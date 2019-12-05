@@ -9,9 +9,8 @@ function setImages(images) {
   }
 }
 
-export function getImages() {
+export function getImages(query) {
   return function(dispatch) {
-    const query = this.state.value
     const apiKey = '14512980-f807f7da94eecb11fe86f08e9'
     axios.get(`https://pixabay.com/api/?key=${apiKey}&q=${query}&image_type=photo`)
       .then((response) => {

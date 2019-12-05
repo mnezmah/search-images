@@ -1,14 +1,17 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import Form from './Form'
+import { getImages } from '../../actions/images'
 
-export default class FormContainer extends Component {
+class FormContainer extends Component {
   state = {
     value: ''
   }
 
   onSubmit = (e) => {
     e.preventDefault()
-    console.log('submitted')
+    this.props.getImages(this.state.value)
+    // console.log('submitted')
   }
 
   onChangeHandler = (e) => {
@@ -28,3 +31,15 @@ export default class FormContainer extends Component {
     )
   }
 }
+
+const mapStateToProps = (state) => {
+  return {
+    images: state.images
+  }
+}
+
+const mapDispatchToProps = {
+  getImages
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(FormContainer)
