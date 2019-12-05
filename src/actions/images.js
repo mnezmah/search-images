@@ -17,7 +17,7 @@ export function getImages() {
       .then((response) => {
         console.log('response : ', response)
         console.log('data:', response.data)
-        this.setState({ images: response.data.hits })
+        dispatch(setImages(response.data.hits))
       }).catch(error => console.log(error))
   }
 }
