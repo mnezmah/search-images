@@ -3,13 +3,15 @@ import { connect } from 'react-redux'
 import Tile from './Tile'
 
 
- function TileContainer() {
+ function TileContainer(props) {
+   console.log('props: ', props)
   return (
     <div>
-      <Tile key = {this.props.images[0].id}
-      imageUrl= {this.props.images[0].webformatURL}
-      imageLabel={this.props.images[0].tags}
-      />
+     { props.images.length ? 
+      <Tile key = {props.images[0].id}
+      imageUrl= {props.images[0].webformatURL}
+      imageLabel={props.images[0].tags}
+      /> : 'loading...'}
     </div>
   )
 }
