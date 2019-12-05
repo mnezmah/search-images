@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function title(props) {
+export default function Title(props) {
   return (
     <div>
       <h3>{props.label}</h3>
