@@ -1,3 +1,10 @@
+@import './Styling/main.scss';
+
+
+body {
+  background-color: $main-background;  
+}
+
 .App {
   text-align: center;
 }

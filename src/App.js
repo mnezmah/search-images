@@ -4,7 +4,7 @@ import store from './store'
 import FormContainer from './components/Form/FormContainer'
 import TileContainer from './components/Tile/TileContainer'
 
-import './App.css';
+import './App.scss';
 
 function App() {
   return (

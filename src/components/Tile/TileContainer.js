@@ -1,12 +1,13 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import Tile from './Tile'
+import './TileContainer.scss'
 
 
  function TileContainer(props) {
    console.log('props: ', props)
   return (
-    <div>
+    <div className='container'>
      { props.images.length ? 
      props.images.map(image => {
        return <Tile 
@@ -15,7 +16,7 @@ import Tile from './Tile'
       imageLabel={image.tags}
       />
      })
-       : 'loading...'}
+       : <p className='message'>Search results will be shown here ...</p>}
     </div>
   )
 }
