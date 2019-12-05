@@ -22,6 +22,7 @@ class FormContainer extends Component {
   }
 
   render() {
+    console.log('PROPS: ', this.props)
     return (
       <div>
         <Form value={this.state.value}
