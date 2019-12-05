@@ -12,7 +12,7 @@ function setImages(images) {
 export function getImages(query) {
   return function(dispatch) {
     const apiKey = '14512980-f807f7da94eecb11fe86f08e9'
-    axios.get(`https://pixabay.com/api/?key=${apiKey}&q=${query}&image_type=photo`)
+    axios.get(`https://pixabay.com/api/?key=${apiKey}&q=${query}&image_type=photo&per_page=9`)
       .then((response) => {
         console.log('response : ', response)
         console.log('data:', response.data)

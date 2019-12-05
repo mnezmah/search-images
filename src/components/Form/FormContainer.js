@@ -11,7 +11,9 @@ class FormContainer extends Component {
   onSubmit = (e) => {
     e.preventDefault()
     this.props.getImages(this.state.value)
-    // console.log('submitted')
+    this.setState({
+      value: ''
+    })
   }
 
   onChangeHandler = (e) => {

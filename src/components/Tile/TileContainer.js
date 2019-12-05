@@ -8,10 +8,14 @@ import Tile from './Tile'
   return (
     <div>
      { props.images.length ? 
-      <Tile key = {props.images[0].id}
-      imageUrl= {props.images[0].webformatURL}
-      imageLabel={props.images[0].tags}
-      /> : 'loading...'}
+     props.images.map(image => {
+       return <Tile 
+       key = {image.id}
+      imageUrl= {image.webformatURL}
+      imageLabel={image.tags}
+      />
+     })
+       : 'loading...'}
     </div>
   )
 }
