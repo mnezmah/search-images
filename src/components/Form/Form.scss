@@ -38,13 +38,13 @@ form {
     @media #{$screen-laptop-only} {
       width: 81vw;
     }
-    
+
     @media #{$screen-desktop-and-bigger} {
       width: 82vw;
     }
   }
 
   ::placeholder {
-    color: $main-grey;
+    color: darken($main-grey, 20%);
   }
 }

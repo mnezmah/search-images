@@ -19,7 +19,8 @@
     width: 17rem;
   }
 
-  @media #{$screen-laptop-only} {
+  // @media #{$screen-laptop-only} {
+  @media #{$screen-laptop-and-bigger} {
     height: 14rem;
     width: 19rem;
   }
