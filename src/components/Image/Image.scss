@@ -19,23 +19,23 @@
     width: 17rem;
   }
 
-   @media #{$screen-laptop-only} {
+  @media #{$screen-laptop-only} {
     height: 14rem;
     width: 19rem;
   }
 
-    @media #{$screen-desktop-and-bigger} {
-     width: 25vw;
-    }
+  @media #{$screen-desktop-and-bigger} {
+    width: 25vw;
+  }
 
   .image {
     position: relative;
     border-radius: 13px;
-    border: 3px solid $main-white;
+    border: 1.5px solid $main-white;
     width: 100%;
     height: 100%;
     max-height: 100%;
     min-width: 100%;
-    // filter: drop-shadow(30px 10px 4px #4444dd);
+    filter: drop-shadow(5px 5px 4px #1c2e3f);
   }
 }
