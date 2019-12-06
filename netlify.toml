@@ -1,6 +1,6 @@
 [build]
   base = "search-images-ed/"
-  publish = "public"
+  publish = "build"
   command = "yarn build"
 
 [context.production]
