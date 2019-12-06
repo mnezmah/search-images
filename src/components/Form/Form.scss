@@ -34,6 +34,11 @@ form {
     @media #{$screen-tablet-landscape-only} {
       width: 89vw;
     }
+
+     @media #{$screen-laptop-only} {
+      width: 79vw;
+    }
+
   }
 
   ::placeholder {

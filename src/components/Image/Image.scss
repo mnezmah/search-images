@@ -19,6 +19,11 @@
     width: 17rem;
   }
 
+   @media #{$screen-laptop-only} {
+    height: 14rem;
+    width: 22rem;
+  }
+
   .image {
     position: relative;
     border-radius: 13px;

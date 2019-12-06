@@ -26,8 +26,14 @@
       font-size: 1rem;
       max-width: 25vw;
     }
+
+    @media #{$screen-laptop-and-bigger} {
+      font-size: 1.3rem;
+      max-width: 17rem;
+    }
   }
 }
+
 
 .message {
   margin: 0 auto;
