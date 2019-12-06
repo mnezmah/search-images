@@ -35,10 +35,13 @@ form {
       width: 89vw;
     }
 
-     @media #{$screen-laptop-only} {
-      width: 79vw;
+    @media #{$screen-laptop-only} {
+      width: 81vw;
     }
-
+    
+    @media #{$screen-desktop-and-bigger} {
+      width: 82vw;
+    }
   }
 
   ::placeholder {

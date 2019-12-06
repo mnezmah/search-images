@@ -21,8 +21,12 @@
 
    @media #{$screen-laptop-only} {
     height: 14rem;
-    width: 22rem;
+    width: 19rem;
   }
+
+    @media #{$screen-desktop-and-bigger} {
+     width: 25vw;
+    }
 
   .image {
     position: relative;

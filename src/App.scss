@@ -9,14 +9,17 @@ body {
   max-width: 90%;
   margin: 0 auto;
 
-    @media #{$screen-mobile-plus-and-bigger} {
-      max-width: 100%;
-    }
+  @media #{$screen-mobile-plus-and-bigger} {
+    max-width: 100%;
+  }
 
-     @media #{$screen-laptop-only} {
-      max-width: 89vw;
-    }
-
+  @media #{$screen-laptop-only} {
+    max-width: 89vw;
+  }
+  
+  @media #{$screen-desktop-and-bigger} {
+    max-width: 90%;
+  }
 }
 
 .App-logo {
