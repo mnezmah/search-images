@@ -1,17 +1,23 @@
-@import "../../Styling/main.scss";
+@import "../../Styling/main";
 
 .image-container {
-
-
   width: 77vw;
   height: 26vh;
 
-  //Desktop
-  // position: relative;
-  // display: inline-block;
-  // vertical-align: middle;
-  // // width: 33vh;
-  // 
+  @media #{$screen-mobile-plus-only} {
+    width: 37vw;
+    height: 47vh;
+  }
+
+  @media #{$screen-tablet-portrait-only} {
+    width: 13rem;
+    height: 10rem;
+  }
+
+  @media #{$screen-tablet-landscape-only} {
+    height: 13rem;
+    width: 17rem;
+  }
 
   .image {
     position: relative;

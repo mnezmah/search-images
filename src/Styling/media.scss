@@ -1,3 +1,13 @@
+//    example usage:
+//    -------------
+//
+//    @media #{$screen-small-and-down } {
+//
+//        .some-class {
+//            font-size: 1.4rem;
+//        }
+///    }
+
 // Breakpoints
 $bp-mobile: 320px;
 $bp-mobile-plus: 480px;
@@ -22,30 +32,30 @@ $tablet-landscape-end: $bp-laptop - 0.5;
 $laptop-start: $bp-laptop;
 $laptop-end: $bp-desktop - 0.5;
 
-$desktop-start: $bp-desktop
-
+$desktop-start: $bp-desktop;
 
 // Media queries
-$screen-mobile-only: 'only screen and ( min-width : #{em($mobile-start)} ) and ( max-width : #{em($mobile-end)} )';
-$screen-mobile-and-smaller: 'only screen and ( max-width : #{em($mobile-end)} )';
-$screen-mobile-and-bigger: 'only screen and ( min-width : #{em($mobile-start)} )';
 
-$screen-mobile-plus-only: 'only screen and ( min-width : #{em($mobile-plus-start)} ) and ( max-width : #{em($mobile-plus-end)} )';
-$screen-mobile-plus-and-smaller: 'only screen and ( max-width : #{em($mobile-plus-end)} )';
-$screen-mobile-plus-and-bigger: 'only screen and ( min-width : #{em($mobile-plus-start)} )';
+$screen-mobile-only: "only screen and( min-width : #{($mobile-start)} ) and ( max-width : #{($mobile-end)} )";
+$screen-mobile-and-smaller: "only screen and ( max-width : #{($mobile-end)} )";
+$screen-mobile-and-bigger: "only screen and ( min-width : #{($mobile-start)} )";
 
-$screen-tablet-portrait-only: 'only screen and ( min-width : #{em($tablet-portrait-start)} ) and ( max-width : #{em($tablet-portrait-end)} )';
-$screen-tablet-portrait-and-smaller: 'only screen and ( max-width : #{em($tablet-portrait-end)} )';
-$screen-tablet-portrait-and-bigger: 'only screen and ( min-width : #{em($tablet-portrait-start)} )';
+$screen-mobile-plus-only: "only screen and ( min-width : #{($mobile-plus-start)} ) and ( max-width : #{($mobile-plus-end)} )";
+$screen-mobile-plus-and-smaller: "only screen and ( max-width : #{($mobile-plus-end)} )";
+$screen-mobile-plus-and-bigger: "only screen and ( min-width : #{($mobile-plus-start)} )";
 
-$screen-tablet-landscape-only: 'only screen and ( min-width : #{em($tablet-landscape-start)} ) and ( max-width : #{em($tablet-landscape-end)} )';
-$screen-tablet-landscape-and-smaller: 'only screen and ( max-width : #{em($tablet-landscape-end)} )';
-$screen-tablet-landscape-and-bigger: 'only screen and ( min-width : #{em($tablet-landscape-start)} )';
+$screen-tablet-portrait-only: "only screen and ( min-width : #{($tablet-portrait-start)} ) and ( max-width : #{($tablet-portrait-end)} )";
+$screen-tablet-portrait-and-smaller: "only screen and ( max-width : #{($tablet-portrait-end)} )";
+$screen-tablet-portrait-and-bigger: "only screen and ( min-width : #{($tablet-portrait-start)} )";
 
-$screen-laptop-only: 'only screen and ( min-width : #{em($laptop-start)} ) and ( max-width : #{em($laptop-end)} )';
-$screen-laptop-and-bigger: 'only screen and ( min-width : #{em($laptop-start)} )';
+$screen-tablet-landscape-only: "only screen and ( min-width : #{($tablet-landscape-start)} ) and ( max-width : #{($tablet-landscape-end)} )";
+$screen-tablet-landscape-and-smaller: "only screen and ( max-width : #{($tablet-landscape-end)} )";
+$screen-tablet-landscape-and-bigger: "only screen and ( min-width : #{($tablet-landscape-start)} )";
 
-$screen-desktop-and-bigger: 'only screen and ( min-width : #{em($desktop-start)} )';
+$screen-laptop-only: "only screen and ( min-width : #{($laptop-start)} ) and ( max-width : #{($laptop-end)} )";
+$screen-laptop-and-bigger: "only screen and ( min-width : #{($laptop-start)} )";
 
-$screen-portrait: 'screen and (orientation: portrait)';
-$screen-landscape: 'screen and (orientation: landscape)';
+$screen-desktop-and-bigger: "only screen and ( min-width : #{($desktop-start)} )";
+
+$screen-portrait: "screen and (orientation: portrait)";
+$screen-landscape: "screen and (orientation: landscape)";

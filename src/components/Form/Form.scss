@@ -1,24 +1,39 @@
-@import "../../Styling/main.scss";
+@import "../../Styling/main";
 
 form {
-  margin: $main-spacing * 2 auto $main-spacing * 2 auto;
-  
-  //desktop
-  // margin: 4%;
+  margin-top: $main-spacing * 2;
+  margin-bottom: $main-spacing * 2;
+  margin-left: 5px;
+
+  @media #{$screen-mobile-plus-only} {
+    margin: $main-spacing * 2 -5px $main-spacing * 2 auto;
+  }
+
+  @media #{$screen-tablet-portrait-and-bigger} {
+    margin: $main-spacing * 3 -6px $main-spacing * 3 auto;
+  }
 
   .form__search {
     padding: $main-spacing;
     border-radius: 5px;
     color: $main-background;
     border: none;
-    width: 90vw;
-
+    width: 80vw;
     font-size: 1rem;
 
-    //desktop
-    // width: 60vw;
-    // font-size: 2rem;
-    // padding-left: 4%;
+    @media #{$screen-mobile-plus-only} {
+      width: 83vw;
+    }
+
+    @media #{$screen-tablet-portrait-only} {
+      font-size: 1.5rem;
+      width: 90vw;
+      padding-left: 4%;
+    }
+
+    @media #{$screen-tablet-landscape-only} {
+      width: 89vw;
+    }
   }
 
   ::placeholder {

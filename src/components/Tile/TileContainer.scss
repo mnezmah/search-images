@@ -1,18 +1,39 @@
-@import "../../Styling/main.scss";
+@import "../../Styling/main";
 
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  position: relative;
 
   .title {
+    display: inline-block;
     color: $main-white;
-    font-size: 1rem;
     max-width: 77vw;
+    text-align: center;
+
+    @media #{$screen-mobile-plus-only} {
+      font-size: 0.9rem;
+      max-width: 47vw;
+    }
+
+    @media #{$screen-tablet-portrait-only} {
+      font-size: 16px;
+      max-width: 12rem;
+    }
+
+    @media #{$screen-tablet-landscape-only} {
+      font-size: 1rem;
+      max-width: 25vw;
+    }
   }
 }
 
 .message {
   margin: 0 auto;
   color: $main-white;
+
+  @media #{$screen-tablet-portrait-and-bigger} {
+    font-size: 1.5rem;
+  }
 }
