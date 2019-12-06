@@ -1,0 +1,51 @@
+// Breakpoints
+$bp-mobile: 320px;
+$bp-mobile-plus: 480px;
+$bp-tablet-portrait: 768px;
+$bp-tablet-landscape: 1024px;
+$bp-laptop: 1240px;
+$bp-desktop: 1600px;
+
+// Device named breakpoints
+$mobile-start: $bp-mobile;
+$mobile-end: $bp-mobile-plus - 0.5;
+
+$mobile-plus-start: $bp-mobile-plus;
+$mobile-plus-end: $bp-tablet-portrait - 0.5;
+
+$tablet-portrait-start: $bp-tablet-portrait;
+$tablet-portrait-end: $bp-tablet-landscape - 0.5;
+
+$tablet-landscape-start: $bp-tablet-landscape;
+$tablet-landscape-end: $bp-laptop - 0.5;
+
+$laptop-start: $bp-laptop;
+$laptop-end: $bp-desktop - 0.5;
+
+$desktop-start: $bp-desktop
+
+
+// Media queries
+$screen-mobile-only: 'only screen and ( min-width : #{em($mobile-start)} ) and ( max-width : #{em($mobile-end)} )';
+$screen-mobile-and-smaller: 'only screen and ( max-width : #{em($mobile-end)} )';
+$screen-mobile-and-bigger: 'only screen and ( min-width : #{em($mobile-start)} )';
+
+$screen-mobile-plus-only: 'only screen and ( min-width : #{em($mobile-plus-start)} ) and ( max-width : #{em($mobile-plus-end)} )';
+$screen-mobile-plus-and-smaller: 'only screen and ( max-width : #{em($mobile-plus-end)} )';
+$screen-mobile-plus-and-bigger: 'only screen and ( min-width : #{em($mobile-plus-start)} )';
+
+$screen-tablet-portrait-only: 'only screen and ( min-width : #{em($tablet-portrait-start)} ) and ( max-width : #{em($tablet-portrait-end)} )';
+$screen-tablet-portrait-and-smaller: 'only screen and ( max-width : #{em($tablet-portrait-end)} )';
+$screen-tablet-portrait-and-bigger: 'only screen and ( min-width : #{em($tablet-portrait-start)} )';
+
+$screen-tablet-landscape-only: 'only screen and ( min-width : #{em($tablet-landscape-start)} ) and ( max-width : #{em($tablet-landscape-end)} )';
+$screen-tablet-landscape-and-smaller: 'only screen and ( max-width : #{em($tablet-landscape-end)} )';
+$screen-tablet-landscape-and-bigger: 'only screen and ( min-width : #{em($tablet-landscape-start)} )';
+
+$screen-laptop-only: 'only screen and ( min-width : #{em($laptop-start)} ) and ( max-width : #{em($laptop-end)} )';
+$screen-laptop-and-bigger: 'only screen and ( min-width : #{em($laptop-start)} )';
+
+$screen-desktop-and-bigger: 'only screen and ( min-width : #{em($desktop-start)} )';
+
+$screen-portrait: 'screen and (orientation: portrait)';
+$screen-landscape: 'screen and (orientation: landscape)';
