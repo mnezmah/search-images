@@ -1,0 +1,7 @@
+[build]
+  base = "/"
+  publish = "public"
+  command = "yarn build"
+
+[context.production]
+environment = { REACT_APP_API_KEY = "14512980-f807f7da94eecb11fe86f08e9" }
