@@ -1,9 +1,10 @@
 import React from 'react'
+import './Title.scss'
 
 export default function Title(props) {
   return (
-    <div>
-      <h3>{props.label}</h3>
+    <div className="title">
+      <p>{props.label}</p>
     </div>
   )
 }

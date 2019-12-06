@@ -1,4 +1,5 @@
 import React from 'react'
+import './Image.scss'
 
 export default function Image(props) {
   return (

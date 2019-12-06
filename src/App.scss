@@ -1,12 +1,13 @@
-@import './Styling/main.scss';
-
+@import "./Styling/main.scss";
 
 body {
-  background-color: $main-background;  
+  background-color: $main-background;
 }
 
 .App {
   text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .App-logo {

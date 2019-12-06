@@ -1,16 +1,18 @@
-
-@import '../../Styling/main.scss';
+@import "../../Styling/main.scss";
 
 .container {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  .title {
+    color: $main-white;
+    font-size: 1rem;
+    max-width: 77vw;
+  }
 }
 
 .message {
   margin: 0 auto;
   color: $main-white;
-}
-
-h3  {
-color: $main-white;
 }

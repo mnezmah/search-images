@@ -1,20 +1,27 @@
-@import '../../Styling/main.scss';
+@import "../../Styling/main.scss";
 
 form {
-  margin: 5%;
+  margin: $main-spacing * 2 auto $main-spacing * 2 auto;
+  
+  //desktop
+  // margin: 4%;
 
   .form__search {
-    width: 60vw;
-    padding: 1%;
+    padding: $main-spacing;
     border-radius: 5px;
     color: $main-background;
-    font-size: 2rem;
     border: none;
-    padding-left: 4%;
+    width: 90vw;
+
+    font-size: 1rem;
+
+    //desktop
+    // width: 60vw;
+    // font-size: 2rem;
+    // padding-left: 4%;
   }
 
   ::placeholder {
-      color: $main-grey;
-    }
-
+    color: $main-grey;
+  }
 }
