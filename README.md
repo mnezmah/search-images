@@ -1,68 +1,48 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Search-images
 
-## Available Scripts
+## What this project is about
+  This is my implementation of search app made as frontend challenge for Country Website
 
-In the project directory, you can run:
+  ## Table of contents:
 
-### `yarn start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **[Technologies used](#technologies-used)**
+- **[Goals for this project](#goals-for-this-project)**
+- **[Features built](#features-built)**
+- **[How to use](#how-to-use)**
+- **[Create-react-app-docs](#create-react-app)**
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Technologies used
 
-### `yarn test`
+#### 👇 Click links to view some samples in this project 👇
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **[React](./src/components/Form/FormContainer.js)**
+- **[Redux](./src/reducers/images.js)**
+- **[Axios](./src/actions/images.js)**
+- **[Sass](./src/components/Tile/TileContainer.scss)**
 
-### `yarn build`
+## Goals for this project: 
+- Build a simple react app with a search form that communicates to external API
+- Show search results in responsive tiles grid (images and text)
+- Style the app
+- Show disciplined git usage
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features built
+- **[Create a search form ](./src/components/Form/FormContainer.js)**
+- **[Show search results ](./src/components/Tile/TileContainer.js)**
+- **[Display 1-3 columns due to screen size](./src/components/Tile/TileContainer.scss)**
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## How to use
+### Install
+- Click the green "Clone or download" button.
+- Save the ZIP and unpack all on your hard drive
+- Go to terminal and run `npm install`
+- Run `npm start`
+- The app should open automatically in your browser on localhost:3000
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+## Create React App
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This project was bootstrapped with create-react-app cli.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+**[The standard create-react-app docs can be found in here](./create-react-app-docs.md)**
