@@ -1,5 +1,5 @@
 [build]
-  base = "/"
+  base = "search-images/"
   publish = "public"
   command = "yarn build"
 
