@@ -1,4 +1,6 @@
 # Search-images
+View deployed version on [![Netlify Status](https://api.netlify.com/api/v1/badges/6311bbfa-eaa2-406f-9558-6f35773826e4/deploy-status)](https://search-images-ed.netlify.com/)
+
 
 ## What this project is about
   This is my implementation of search app made as frontend challenge for Country Website
