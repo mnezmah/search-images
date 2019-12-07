@@ -18,29 +18,49 @@ form {
     border-radius: 5px;
     color: $main-background;
     border: none;
-    width: 80vw;
+    width: 92%;
     font-size: 1rem;
 
-    @media #{$screen-mobile-plus-only} {
-      width: 83vw;
+    @media (min-width: 320px) and (max-width: 479.5px) {
+      max-width: 18rem;
     }
 
-    @media #{$screen-tablet-portrait-only} {
-      font-size: 1.5rem;
-      width: 90vw;
-      padding-left: 4%;
+    @media (min-width: 480px) and (max-width: 529.5px) {
+      max-width: 86vw;
     }
 
-    @media #{$screen-tablet-landscape-only} {
-      width: 89vw;
+    @media (min-width: 530px) and (max-width: 555.5px) {
+      max-width: 85vw;
     }
 
-    @media #{$screen-laptop-only} {
-      width: 81vw;
+    @media (min-width: 556px) and (max-width: 599.5px) {
+      max-width: 84vw;
     }
 
-    @media #{$screen-desktop-and-bigger} {
-      width: 82vw;
+    @media (min-width: 600px) and (max-width: 729.5px) {
+      max-width: 85vw;
+    }
+
+    @media (min-width: 730px) and (max-width: 767.5px) {
+      max-width: 81vw;
+    }
+
+    @media (min-width: 768px) and (max-width: 811.5px) {
+      max-width: 87vw;
+    }
+
+    @media (min-width: 812px) and (max-width: 1023.5px) {
+      max-width: 84vw;
+    }
+
+    @media (min-width: 1280px) and (max-width: 2199.5px) {
+      width: 100%;
+      max-width: 94%;
+    }
+
+    @media (min-width: 2200px) {
+      width: 100%;
+      max-width: 95%;
     }
   }
 
