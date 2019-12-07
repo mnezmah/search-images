@@ -21,6 +21,7 @@ View deployed version on [![Netlify Status](https://api.netlify.com/api/v1/badge
 - **[React](./src/components/Form/FormContainer.js)**
 - **[Redux](./src/reducers/images.js)**
 - **[Axios](./src/actions/images.js)**
+- **[Pixabay API](./src/actions/images.js)**
 - **[Sass](./src/components/Tile/TileContainer.scss)**
 
 ## Goals for this project: 
@@ -41,7 +42,6 @@ View deployed version on [![Netlify Status](https://api.netlify.com/api/v1/badge
 - Go to terminal and run `npm install`
 - Run `npm start`
 - The app should open automatically in your browser on localhost:3000
-
 
 ## Create React App
 
