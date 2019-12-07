@@ -20,7 +20,6 @@ class FormContainer extends Component {
     this.setState({
       value: e.target.value
     })
-    console.log('value: ', this.state.value)
   }
 
   render() {

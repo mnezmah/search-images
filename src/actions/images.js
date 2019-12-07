@@ -13,7 +13,7 @@ export function getImages(query) {
   return function (dispatch) {
     axios.get(`https://pixabay.com/api/?key=${process.env.REACT_APP_API_KEY}&q=${query}&image_type=photo&per_page=9`)
       .then((response) => {
-        console.log('response : ', response)
+        console.log('request: ', response)
         dispatch(setImages(response.data.hits))
       }).catch(error => console.log(error))
   }
