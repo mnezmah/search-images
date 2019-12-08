@@ -1,3 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render App corectly 1`] = `ShallowWrapper {}`;
+exports[`should render App corectly 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <div
+    className="App"
+  >
+    <Connect(FormContainer) />
+    <Connect(TileContainer) />
+  </div>
+</Provider>
+`;
