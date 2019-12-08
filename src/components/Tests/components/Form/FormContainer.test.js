@@ -39,18 +39,3 @@ test('should set state.value on input change', () => {
   wrapper.find('Form').find('input').simulate('change', { target: {value}})
   expect(wrapper.find('FormContainer').state('value')).toBe(value)
 })
-
-// test('should handle onSubmit', () => {
-//   const value = 'horse'
-//   let getImages = jest.fn()
-//   const preventDefault = jest.fn()
-//   const wrapper = mount(
-//     <Provider store={store}>
-//       <FormContainer
-//         getImages={getImages} />
-//     </Provider>
-//   )
-//   wrapper.find('Form').find('form').simulate('submit', { preventDefault, getImages })
-//   // expect(getImages).toBeCalled()
-//   // expect(wrapper.state('value')).toBe(value)
-// }) 

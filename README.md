@@ -21,6 +21,7 @@ View deployed version on [![Netlify Status](https://api.netlify.com/api/v1/badge
 - **[React](./src/components/Form/FormContainer.js)**
 - **[Redux](./src/reducers/images.js)**
 - **[Axios](./src/actions/images.js)**
+- **[Jest](./src/components/Tests/components/Form/FormContainer.test.js)**
 - **[Pixabay API](./src/actions/images.js)**
 - **[Sass](./src/components/Tile/TileContainer.scss)**
 
